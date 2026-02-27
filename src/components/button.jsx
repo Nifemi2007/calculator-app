@@ -1,7 +1,11 @@
-function button({text, dark}) {
-    return <div className="button" style={{backgroundColor:dark ? "#252525":""}}>
+import { useContext } from "react"
+import { GlobalStateContext } from "../App"
+
+function Button({text, func}) {
+    const {dark} = useContext(GlobalStateContext)
+    return <button onClick={() => func(text)} style={dark ? {color: "orange",backgroundColor:  "#252525"}: {}}>
         <p>{text}</p>
-    </div>
+    </button>
 }
 
-export default button
+export default Button

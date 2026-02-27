@@ -28,7 +28,7 @@ main{
   height: 20%;
   /* color: black; */
 
-  margin-bottom: 50px;
+  margin-bottom: 35px;
   display: grid;
   place-items: center;
 }
@@ -43,9 +43,28 @@ main{
   text-align: right;
 }
 
+.upper_btn {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.special_btn {
+  display: flex;
+  gap: 20px;
+  
+}
+
+.special_btn > button {
+  border-radius: 10%;
+  height: 40px;
+  font-size: 18px;
+}
+
 .icon{
   transform: scale(2.5);
-  margin-bottom: 30px;
+  
   margin-left: 20px;
 }
 
@@ -63,21 +82,24 @@ main{
   gap: 20px;
 }
 
-.button {
+button {
   display: grid;
   place-items: center;
   font-size: 25px;
   height: 80px;
   width:80px;
   border-radius: 50%;
+  border: 1px solid black;
   background-color: #eef1f3;
-    box-shadow: -1px 0px 2px gray;
+    /* box-shadow: -1px 0px 2px gray; */
 
 }
 
-.button:hover{
+button:hover{
   background-color: black;
   color: white;
+  transform: scale(1.1);
 cursor: pointer;
 transition: .5s;
 }
+
